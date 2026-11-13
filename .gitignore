@@ -1,0 +1,24 @@
+# ── Private workspace: nothing under data/ is ever committed ──
+data/*
+!data/.gitkeep
+!data/README.md
+
+# Private folders, wherever they appear
+reports/
+exports/
+
+# Secrets and raw data files
+.env
+.env.*
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.xlsm
+
+# Local / generated
+__pycache__/
+*.pyc
+.claude/settings.local.json
+.DS_Store
+Thumbs.db

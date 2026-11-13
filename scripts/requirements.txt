@@ -1,0 +1,2 @@
+# ShopPilot scripts use the Python 3.9+ standard library only.
+# No third-party packages are required.
