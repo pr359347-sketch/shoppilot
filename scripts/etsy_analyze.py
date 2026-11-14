@@ -112,7 +112,9 @@ def size_from(text):
         a, b = sorted((a, b))
         if a <= 0:
             return ""
-        if is_round or (a == b and "square" not in t):
+        if "sample" in t or "swatch" in t:
+            return f"sample {a:g}x{b:g}"
+        if is_round:
             return f"round {a:g}"
         label = f"{a:g}x{b:g}"
         return f"runner {label}" if a <= 3 and b / a >= 2.5 else label
@@ -191,10 +193,12 @@ def analyze(shop, folder, dfrom, dto, listing_health):
             continue
         qty = int(money(col(r, "Quantity")) or 1)
         price = money(col(r, "Price"))
-        total = money(col(r, "Item Total")) or (price * qty - money(col(r, "Discount Amount")))
+        # Etsy's "Item Total" / "Price" are BEFORE the coupon, so real revenue = price*qty - discount.
+        gross = price * qty
+        net = gross - money(col(r, "Discount Amount"))
         title = col(r, "Item Name")
         clean.append({
-            "date": d, "qty": qty, "price": price, "rev": total, "title": title,
+            "date": d, "qty": qty, "price": price, "gross": gross, "rev": net, "title": title,
             "lid": col(r, "Listing ID") or norm_title(title)[:40], "oid": col(r, "Order ID"),
             "buyer": col(r, "Buyer"), "country": col(r, "Ship Country") or "?",
             "size": size_from(col(r, "Variations")) or size_from(title) or "no size",
@@ -211,7 +215,9 @@ def analyze(shop, folder, dfrom, dto, listing_health):
         summary.update(revenue=rev, units=units, orders=n_orders, aov=rev / n_orders if n_orders else 0)
         out.append("## Topline (order items)")
         out.append(f"- Date range: {min(dates) if dates else '?'} → {max(dates) if dates else '?'}")
-        out.append(f"- Orders: {n_orders} · Units: {units} · Item revenue: {rev:,.0f} · AOV: {rev / n_orders:,.0f}")
+        gross_total = sum(x["gross"] for x in clean)
+        out.append(f"- Orders: {n_orders} · Units: {units} · Net revenue (after coupons): {rev:,.0f} · AOV (net): {rev / n_orders:,.0f}")
+        out.append(f"- List value before coupons: {gross_total:,.0f} · Discounts: {gross_total - rev:,.0f} ({pct(gross_total - rev, gross_total)})")
         out.append(f"- Currency: {', '.join(f'{c} ({n})' for c, n in curs.most_common()) or '?'}"
                    + ("  ⚠ mixed currencies — totals are not comparable" if len(curs) > 1 else ""))
         cp = sum(1 for x in clean if x["coupon"])
@@ -286,7 +292,9 @@ def analyze(shop, folder, dfrom, dto, listing_health):
 
     # ---------- listings ----------
     if listings:
+        # Titles change after a sale (Item Name = title at sale time), so match by SKU first, title as fallback.
         sold = {norm_title(x["title"]) for x in clean}
+        sold_skus = {s.strip().lower() for x in clean for s in x["sku"].split(",") if s.strip()}
         summary["active_listings"] = len(listings)
         if clean:
             summary["rev_per_listing"] = summary["revenue"] / len(listings)
@@ -310,7 +318,8 @@ def analyze(shop, folder, dfrom, dto, listing_health):
                 agg[re.sub(r" \(\d+\)$", "", p)] += 1
             if probs:
                 issues.append((title[:60], len(title), len(tags), photos, money(col(r, "PRICE")), "; ".join(probs)))
-            if clean and norm_title(title) not in sold:
+            has_sale = norm_title(title) in sold or col(r, "SKU").lower() in sold_skus
+            if clean and not has_sale:
                 zero.append((title[:70], money(col(r, "PRICE")), construction_of(title), len(tags), photos))
         out.append(f"## Active listings: {len(listings)}")
         cc = Counter(construction_of(col(r, "TITLE")) for r in listings)
@@ -325,7 +334,7 @@ def analyze(shop, folder, dfrom, dto, listing_health):
         if clean:
             summary["pct_with_sale"] = pct(len(listings) - len(zero), len(listings))
             out.append(f"## Zero-sale active listings in this data window: {len(zero)} of {len(listings)}")
-            out.append("_Matched by title — a listing whose title was edited after a sale may wrongly appear here._")
+            out.append("_Matched by SKU, then by title. Listings whose SKU and title both changed since the sale may still appear here._")
             out.append(table(["Title", "Price", "Construction", "Tags", "Photos"], zero[:60]) + "\n")
             if len(zero) > 60:
                 out.append(f"_…and {len(zero) - 60} more_\n")
