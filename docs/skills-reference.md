@@ -13,6 +13,8 @@ All skills live in `.claude/skills/<module>/<skill>/SKILL.md`. The agent opens t
 | `/seo` | Keyword research + full listing package |
 | `/prompts` | Photo, banner / social, and video prompts |
 
+v1.0 commands (`/health`, `/research`, `/new-product`, `/creative`, `/ads`, `/report`, `/approvals`, `/freeze`): see [agents-reference.md](agents-reference.md).
+
 ## Core skills (platform-agnostic)
 
 | Skill | Use it for | You provide | You get |
@@ -46,6 +48,23 @@ Platform rules: `.claude/skills/etsy/PLATFORM.md`. Export steps: [etsy-csv-expor
 | `domain/rugs.md` | Sizes (ft + cm), constructions, pile heights, materials + care, rooms, styles |
 | `domain/home-textiles.md` | Pillows, throws, quilts, table linens, curtains, decor — sizes, materials, care, photo set |
 
-## Coming soon
+## v1.0 core skills
 
-`ebay/`, `shopify/`, `amazon/` — see each folder's README for the module contract and [adding-a-platform.md](adding-a-platform.md).
+| Skill | Use it for |
+|---|---|
+| `core/AGENT-RULES.md` | Shared rules every subagent reads first |
+| `core/approval-flow` | Proposal cards, ok/no handling, safe execution, logging |
+| `core/experiment-tracker` | +7/+14/+30 day before/after checks → learnings |
+| `core/cross-listing` | One listing → Etsy / eBay / Shopify / Amazon formats + bulk files |
+| `core/google-seo` | Meta, alt text, structured data, collections, blog, Merchant Center, Search Console, GA4, page speed |
+| `core/trend-research` | Trend signals, price bands, scoring, fit |
+| `core/creative-qa` | Tool choice, lock-line, drift check, text check, disclosure |
+| `core/profit-check` | Profit per product/size/platform, price floor, break-even |
+| `core/customer-replies` | Message / review / case reply templates and platform rules |
+| `core/social-planner` | Pinterest + Instagram specs, cadence, calendar |
+| `core/health-check` | Monthly health check method |
+| `core/ops-routine` | Daily log, summaries, weekly report, freeze, reminders |
+
+## Other platforms
+
+`ebay/PLATFORM.md`, `shopify/PLATFORM.md`, `amazon/PLATFORM.md` — limits, fees (`[VERIFY]`), ranking, admin paths, exports, monthly health checklist. Agents: see [agents-reference.md](agents-reference.md). Export guides: [eBay](ebay-csv-export-guide.md) · [Shopify](shopify-csv-export-guide.md) · [Amazon](amazon-csv-export-guide.md).

@@ -13,6 +13,7 @@ A platform module is complete when all of this exists (replace `<p>` with the pl
   <p>-shop-analysis/SKILL.md     sales analysis from exports
   <p>-ads-optimizer/SKILL.md     ad performance → pause / scale / fix
 docs/<p>-csv-export-guide.md     exact export steps, shown to users when a file is missing
+.claude/agents/<p>-agent.md      the platform subagent (short: read-first list, tasks table, output, action mode)
 scripts/<p>_analyze.py           export cruncher
 ```
 
@@ -27,7 +28,8 @@ scripts/<p>_analyze.py           export cruncher
    - `.claude/commands/start.md` → platform list
    - `README.md` → platform support table and roadmap
    - `docs/skills-reference.md`
-   - replace the placeholder `README.md` in `.claude/skills/<p>/`
+   - add the platform's action mode (execute-after-approval or advisor-only) to `CLAUDE.md` §2 and `core/AGENT-RULES.md` §1
+   - add a "Monthly health check" checklist section to `PLATFORM.md`
 6. **Don't fork the core skills.** `core/` skills read limits from the active `PLATFORM.md`. If a core skill needs platform-specific behaviour, add a short section to your `PLATFORM.md` and reference it, rather than copying the skill.
 7. **Test in both modes:** generic (no shop) and connected (a test profile with `platform: <p>` and sample exports in `data/` — which stays untracked).
 

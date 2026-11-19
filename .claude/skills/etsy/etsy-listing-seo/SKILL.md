@@ -66,7 +66,7 @@ WHY YOU'LL LOVE IT
 • 3–5 USPs (true ones, from brand.md)
 
 CARE
-• …(by material, from rug-specs.md)
+• …(by material, from `.claude/skills/domain/rugs.md`)
 
 SHIPPING
 • Made to order in … days • ships via … with tracking • delivery … • free shipping …

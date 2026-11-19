@@ -12,3 +12,4 @@ Run a data analysis for a connected shop. Arguments (optional): `$ARGUMENTS` —
    - compare (2+ shops) → `.claude/skills/core/multi-shop-compare/SKILL.md`
 4. **Exports first.** Check `data/exports/<shop>/`. List which files are present. If a file the analysis needs is missing, show the exact export steps from `docs/<platform>-csv-export-guide.md` and wait.
 5. Follow the skill. Save the report to `data/reports/` (private) and reply with the short summary + prioritized actions.
+6. **v1.0 routing:** this command runs **analytics-agent** (sales/compare) or the ads flow (`/ads`). Kept for backwards compatibility.

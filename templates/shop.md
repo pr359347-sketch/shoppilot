@@ -14,6 +14,15 @@
 - **Target buyer:** [TODO]
 - **Target markets:** [e.g. US, UK, DE, FR, NL, CA, AU]
 - **Made in / ships from:** [country]
+- **ShopPilot action mode:** set by platform — Etsy / Shopify: ShopPilot executes after your "ok" · eBay / Amazon: advisor only (you make the change)
+- **Connectors available:** [e.g. Shopify connector, Canva, Semrush, Search Console — or "browser only"]
+
+## Platform extras (fill the ones for this shop's platform)
+
+- **Etsy:** Star Seller yes/no · Etsy Ads on/off · Offsite Ads rate 12% / 15%
+- **eBay:** Store plan [none / Starter / Basic …] · Seller level [Top Rated / Above / Below] · Promoted Listings General / Priority
+- **Shopify:** Plan [TODO] · Payments [Shopify Payments / other] · Google & YouTube app (Merchant Center) yes/no · Search Console + GA4 connected yes/no
+- **Amazon:** Marketplace [US / UK / DE …] · Handmade yes/no · Brand Registry yes/no · Fulfilment FBA / FBM · PPC on/off
 
 ## Goals
 

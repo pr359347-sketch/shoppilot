@@ -10,7 +10,7 @@ Thanks for helping. ShopPilot is a set of instructions, skills and small scripts
    git config core.hooksPath .githooks
    ```
    It blocks commits touching `data/`, `reports/`, `exports/`, `.env` / CSV / Excel files, personal emails, real shop URLs, and any word in your local `data/.private-keywords`. Don't bypass it with `--no-verify`.
-3. **Advisor only.** Skills must never instruct the agent to log in to a marketplace, edit listings or contact buyers.
+3. **Approval first.** Skills and agents never make live changes on their own. Every change goes through `core/approval-flow` (proposal → owner "ok" → master executes on Etsy/Shopify only). eBay and Amazon stay advisor-only. Agents never log in, never type credentials, never message buyers without approval.
 4. **Honest by default.** Skills must not invent platform limits, fees, search volumes or product claims. Uncertain numbers are marked `[VERIFY]`.
 5. **Paste-ready output.** Every skill ends with concrete, copyable output and a short "Next steps" list.
 

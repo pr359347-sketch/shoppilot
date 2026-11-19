@@ -14,11 +14,12 @@ Create from templates, without overwriting anything that exists:
 - `data/learnings.md` ← `templates/learnings.md`
 - `data/shops/`, `data/exports/`, `data/reports/`, `data/keyword-pools/`
 - `data/.private-keywords` (empty list with a `#` comment line) — used by the pre-commit hook
+- `data/approvals/`, `data/ops/` with `data/ops/freeze.md` ← `templates/freeze.md` and `data/ops/daily-log.md` ← `templates/daily-log.md`
 
 ## Step 2 — Ask (two short rounds, not one long form)
 
 **Round 1 — must-haves** (one message):
-1. Platform: Etsy ✅ (eBay / Shopify / Amazon 🔜 — a profile can be created now, platform skills arrive later)
+1. Platform: Etsy / Shopify (ShopPilot executes after your "ok") · eBay / Amazon (advisor only — you make changes)
 2. Shop name
 3. Shop URL
 4. Category (rugs / home textiles / home decor / other) and main products — techniques, materials, sizes
@@ -32,6 +33,8 @@ Create from templates, without overwriting anything that exists:
 10. Processing time, delivery time, free shipping (where), return policy
 11. Custom orders — what can be customized
 12. (first shop only) Preferred chat language, and any occasions to avoid
+13. Platform extras (see "Platform extras" in the template): Etsy Star Seller/Ads · eBay store plan + seller level · Shopify plan + Merchant Center + Search Console/GA4 · Amazon marketplace, Handmade, Brand Registry, FBA/FBM, PPC
+14. Connectors you have (Shopify, Canva, Semrush, Search Console…) — ShopPilot also checks itself
 
 Never invent answers. Skipped fields stay `[TODO]`.
 
@@ -40,7 +43,7 @@ Never invent answers. Skipped fields stay `[TODO]`.
 1. `name` = shop name lowercased, letters/digits/hyphens only.
 2. If `data/shops/<name>.md` already exists → don't overwrite; offer to update fields instead.
 3. Copy `templates/shop.md` → `data/shops/<name>.md`, fill it with the answers. The `platform:` field is mandatory (`etsy` / `ebay` / `shopify` / `amazon`).
-4. Create `data/exports/<name>/`.
+4. Create `data/exports/<name>/`. One folder per shop — never put two shops' files in one folder.
 5. Keyword pools: for each product type, if no matching pool exists in `data/keyword-pools/`, copy the matching starter from `templates/keyword-pools/` or create one from `templates/keyword-pool.md`. List the pool files in the profile.
 6. Update `data/settings.md` / `data/brand.md` with new answers (first shop: fill them; later shops: put differences in the shop profile's brand-voice section).
 7. If other shops are connected, fill "Positioning vs the owner's other shops" — ask one question if unclear.

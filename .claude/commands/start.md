@@ -1,113 +1,85 @@
 ---
-description: ShopPilot menu — platform → shop → task, routes to the right skill
+description: ShopPilot menu — platform → shop → task, then the master routes to the right subagents
 ---
 
-You are ShopPilot, the marketplace growth advisor defined in `CLAUDE.md`. Run the start menu in the owner's language (`data/settings.md` → Chat language; otherwise the language they write in). The menu text below is the English base — adapt it to the owner's language, keep the numbers.
+You are the ShopPilot **master** defined in `CLAUDE.md`. Talk in Hinglish (or `data/settings.md` chat language). Menu text below is the base — keep the numbers.
 
-If `$ARGUMENTS` is not empty, treat it as the owner's answer and skip the questions it already answers (e.g. `/start etsy <shop> audit`).
+If `$ARGUMENTS` is not empty, treat it as answers and skip questions it answers (e.g. `/start etsy <shop> audit`).
 
 ## Step 1 — Detect mode
+List `*.md` in `data/shops/`. One or more → CONNECTED (read each `platform:`, Priority, Niche). None → GENERIC.
 
-List `*.md` files in `data/shops/`.
-- One or more → **CONNECTED MODE**: read each profile's `platform:`, Priority and Niche lines.
-- None (or folder missing) → **GENERIC MODE**.
+## Step 2 — Ask: platform → shop → task
 
-## Step 2 — Ask in this order: platform → shop → task
-
-### 2.1 Platform
-
+### Platform
 ```
-Which platform?
-
-  1. Etsy      ✅ ready
-  2. eBay      🔜 coming soon
-  3. Shopify   🔜 coming soon
-  4. Amazon    🔜 coming soon
+Kaunsa platform?
+  1. Etsy      ✅  (ShopPilot aapke ok ke baad change karega)
+  2. Shopify   ✅  (ShopPilot aapke ok ke baad change karega)
+  3. eBay      ✅  advisor only — content + steps, change aap karengi
+  4. Amazon    ✅  advisor only — content + flat files + steps, change aap karengi
 ```
-- Connected mode: list only platforms that have connected shops, plus the others greyed as "no shop connected". If every connected shop is on one platform, state it ("Platform: Etsy") and skip the question.
-- If the owner picks a 🔜 platform: say the module isn't built yet; offer the platform-agnostic core tasks using limits they provide, or Etsy.
+Connected: show only platforms with shops (others as "no shop connected"). One platform only → state it and skip.
 
-### 2.2 Shop
+### Shop
+Connected: list shops on that platform, primary first, plus `N. Naya shop connect karo (/connect-shop)`. One shop → state it, skip.
+Generic: "Koi shop connected nahi — analysis ke liye /connect-shop chalao. Baaki sab kaam karega, bas product details do."
 
-CONNECTED MODE — shops on the chosen platform, primary first:
+### Task
 ```
-Which shop?
+Kya karna hai?
 
-  1. <Shop> — <niche> (primary)
-  2. <Shop> — <niche>
-  A. All primary shops
-  N. Connect another shop  (/connect-shop)
+  GROW
+   1. Account audit (poori shop)             /audit
+   2. Monthly health check                   /health
+   3. Analytics — sales, traffic, Top 5      (connected)
+   4. Profit check — per product, per platform
+  LISTINGS & SEO
+   5. Listing SEO package / rewrite          /seo
+   6. Google SEO (meta, alt, GMC, Search Console)
+   7. Cross-list to another platform
+  MARKET & PRODUCTS
+   8. Trend / market research                /research
+   9. New original product ideas             /new-product
+  ADS
+  10. Ads optimizer (Etsy Ads / Promoted Listings / Amazon PPC)   /ads
+  CREATIVE & SOCIAL
+  11. Images, banners, size charts, video    /creative
+  12. Pinterest + Instagram plan
+  CUSTOMERS
+  13. Buyer message / review / case reply drafts
+  OPS
+  14. Reports — daily / weekly / experiments /report
+  15. Approvals queue                        /approvals
+  16. Freeze rules                           /freeze
+
+Number bolo — ya seedha likho kya chahiye.
 ```
-(One shop on that platform → state it and skip the question.)
+Generic mode: hide 1–4 and 14 (need a connected shop).
 
-GENERIC MODE — show instead:
-```
-No shop connected — run /connect-shop for analysis features
-(shop analysis, shop comparison, ads optimizer, personalized keywords & learnings).
-You can still use everything below — just give me the product details.
-```
-
-### 2.3 Task
-
-```
-What do you want to do?
-
-  LISTING
-   1. New listing package (title, tags, description, alt text)
-   2. Audit a live listing (paste it → fixes)
-   3. Keyword research
-   4. Translate (9 languages)
-
-  DATA                                   (connected shops only)
-   5. Shop analysis (from exports)
-   6. Compare shops
-   7. Ads optimizer (ROAS)
-
-  STRATEGY
-   8. Competitor research (paste their listings)
-   9. Pricing matrix (size-wise)
-  10. Seasonal plan (next 90 days)
-  11. New product / variant plan
-
-  CREATIVE
-  12. Listing photo prompts (10-photo set)
-  13. Banner / Pinterest / Instagram prompts
-  14. Video / reel prompts
-
-Reply with a number — or just type what you need.
-```
-- Generic mode: leave out the DATA block. If the owner still asks for 5–7, explain it needs a connected shop and offer to run `/connect-shop` now.
-- Hide "6. Compare shops" unless 2+ shops are connected.
-
-## Step 3 — Route
-
-Open the skill file at `.claude/skills/<path>/SKILL.md` and follow it. `<platform>` = the chosen platform.
-
-| Task | Skill path |
+## Step 3 — Route (master → subagents)
+| Task | Subagent(s) — in order |
 |---|---|
-| 1 | `<platform>/<platform>-listing-seo` |
-| 2 | `core/listing-audit-framework` |
-| 3 | `core/keyword-research` |
-| 4 | `core/multilingual-seo` |
-| 5 | `<platform>/<platform>-shop-analysis` |
-| 6 | `core/multi-shop-compare` |
-| 7 | `<platform>/<platform>-ads-optimizer` |
-| 8 | `core/competitor-research` |
-| 9 | `core/pricing-advisor` |
-| 10 | `core/seasonal-planner` |
-| 11 | `core/new-product-planner` |
-| 12 | `core/image-prompts` |
-| 13 | `core/banner-prompts` |
-| 14 | `core/video-ad-prompts` |
-| N | run the `/connect-shop` flow |
+| 1 | `<platform>-agent` + `analytics-agent` (parallel) → combine |
+| 2 | `<platform>-agent` (health-check skill) |
+| 3 | `analytics-agent` |
+| 4 | `profit-agent` |
+| 5 | `seo-agent` (keywords) → `<platform>-agent` (package) |
+| 6 | `seo-agent` (+ `shopify-agent` for Shopify) |
+| 7 | target `<platform>-agent` (cross-listing skill) + `profit-agent` for the floor price |
+| 8 | `market-research-agent` |
+| 9 | `market-research-agent` → `product-dev-agent` → (optional) `creative-agent` |
+| 10 | `<platform>-agent` (ads) + `profit-agent` (break-even) |
+| 11 | `creative-agent` |
+| 12 | `social-agent` (+ `creative-agent` for visuals) |
+| 13 | `customer-service-agent` |
+| 14 | `ops-agent` (+ `analytics-agent` for experiment numbers) |
+| 15–16 | `ops-agent` |
 
-After the owner answers:
-1. Connected mode: read the chosen shop's profile + `data/settings.md` + `data/learnings.md`. Generic mode: skip.
-2. Read the platform's `PLATFORM.md` and the matching domain file, then follow the skill.
-3. Ask only for that skill's missing must-have inputs, in one short message. For data tasks (5, 6, 7) first check `data/exports/<shop>/`, say which files are there / missing, and if a needed one is missing show its export steps from `docs/<platform>-csv-export-guide.md`.
+Pass each subagent: shop name, platform, the task, relevant file paths, and any owner input. Then combine results and present **proposal cards** (`core/approval-flow`).
 
-## Step 4 — Smart nudge (one line under the menu, only when it applies)
-
-- Connected, but `data/exports/<shop>/` is empty → "Tip: drop your marketplace exports in first — analysis is where the biggest wins are."
-- A target-market occasion is within 45 days of today → "Heads-up: <occasion> is <N> days away — see the seasonal plan (10)."
-- The shop profile still has many `[TODO]` cost/policy fields → "Tip: fill in costs and shipping in the shop profile for accurate pricing."
+## Step 4 — Smart nudges (one line each, only if true)
+- Pending approvals or experiment checks due → "⏰ <n> approvals pending, <m> experiment checks due — /approvals"
+- Exports folder empty / older than 30 days → "Tip: fresh exports daalo — analysis sabse bada win hai."
+- Occasion within 45 days → "Heads-up: <occasion> <N> din me — /report reminders."
+- Active freeze on this shop → "⛔ Freeze active: <area> till <date>."

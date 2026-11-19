@@ -97,3 +97,21 @@ Step-by-step export instructions to show the owner: `docs/etsy-csv-export-guide.
 | Monthly statement (fees) | Shop Manager → Finances → Monthly statements → Download CSV | `etsy_statement_<year>_<m>.csv` |
 | Stats / listing stats / search terms | Shop Manager → Stats (set date range) — if no CSV button, copy-paste the table or screenshot | save as `stats_*.csv` / `search_terms_*.csv` or paste in chat |
 | Etsy Ads | Shop Manager → Marketing → Etsy Ads → listing table (download if available, else copy-paste) | `ads_*.csv` |
+
+## Mode, policies, safe execution
+
+**ShopPilot mode on Etsy: EXECUTE-AFTER-APPROVAL** — the master makes one approved change at a time in the owner's logged-in Shop Manager, at safe speed (`.claude/skills/core/AGENT-RULES.md` §5).
+
+Policy notes: Creativity standards (made / designed / handpicked by the seller; production partners disclosed in the listing and About); photos must accurately represent the item — AI or preview renders of made-to-order items must be disclosed and never replace a real photo of an existing item; no fees-avoidance (off-Etsy payment or contact to avoid fees); no review manipulation; no trademarked brand names in tags/titles you don't own.
+
+## Monthly health check
+
+- [ ] Star Seller status: message response rate, on-time shipping with tracking, 5-star review rate
+- [ ] Stats MoM: visits, conversion, orders, revenue, AOV; traffic sources (Etsy search / app / direct / social / Etsy Ads / offsite)
+- [ ] Listings with 0 visits (30 d) and 0 sales (90 d) — rewrite / renew / deactivate proposals
+- [ ] Attributes fully filled + 13 tags used on all active listings (`--listing-health`)
+- [ ] Photo count < 10 or no video listings
+- [ ] Etsy Ads ROAS vs break-even per listing; Offsite Ads cost share
+- [ ] Prices vs floor (`profit-agent`) after fee changes; free US shipping on
+- [ ] Shop sections, announcement, shop title, About up to date; sale events scheduled for upcoming occasions
+- [ ] Experiments due (`core/experiment-tracker`) and learnings applied

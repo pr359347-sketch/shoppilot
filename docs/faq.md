@@ -1,7 +1,7 @@
 # FAQ
 
 **Does ShopPilot change anything in my shop?**
-No. It is an advisor. It has no access to your marketplace account. It gives you paste-ready text and step-by-step instructions; you make every change yourself.
+Only after your explicit "ok" on a specific proposal, and only on **Etsy and Shopify** (in your own logged-in browser session or a connected Shopify connector, one change at a time at human speed). On **eBay and Amazon** it is advisor-only: you get paste-ready text, upload files and step-by-step instructions, and you make every change yourself. It never types your passwords or payment details.
 
 **What do I need to run it?**
 [Claude Code](https://claude.com/claude-code) and this repo. Python 3 is needed only for the CSV analysis script (standard library, nothing to install).

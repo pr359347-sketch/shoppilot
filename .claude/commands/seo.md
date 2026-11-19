@@ -1,5 +1,5 @@
 ---
-description: Listing SEO — keyword research and a full paste-ready listing package
+description: SEO — marketplace keywords + listing package, and Google SEO (meta, alt text, Merchant Center, Search Console)
 ---
 
 Create or improve listing SEO. Arguments (optional): `$ARGUMENTS` — the product description, e.g. `/seo hand tufted wool rug, beige abstract, 5x8 and 8x10`.
@@ -12,3 +12,5 @@ Create or improve listing SEO. Arguments (optional): `$ARGUMENTS` — the produc
    - translation → `.claude/skills/core/multilingual-seo/SKILL.md`
 4. Use the limits in `.claude/skills/<platform>/PLATFORM.md` and the matching domain file. Show character counts for every title and tag.
 5. Offer the next step in one line: photo prompts (`/prompts`) or translation.
+6. **v1.0 routing:** keywords + Google SEO → **seo-agent** (Semrush if connected); the listing package → **<platform>-agent**. Run seo-agent first, pass its keyword set on. Google-only tasks (Shopify meta, GMC feed, GSC fixes) → seo-agent + shopify-agent.
+7. Applying the new title/tags/meta = proposal card (Etsy/Shopify: ShopPilot does it after "ok"; eBay/Amazon: owner steps).
