@@ -11,11 +11,11 @@ KYUN:     <the data/reason in 1–2 lines, with source>
 IMPACT:   <expected effect + how we'll measure it (metric, 7/14/30 d)>
 RISK:     <what could go wrong — ranking reset, margin, policy> · Level: low / med / high
 ROLLBACK: <how to undo — old values saved in the proposal file>
-MODE:     ShopPilot karega (Etsy/Shopify)  |  Aap karengi — steps neeche (eBay/Amazon)
+MODE:     ShopPilot karega (Etsy/Shopify)  |  Aap karo — steps neeche (eBay/Amazon)
 → Reply: "ok <ID>"  /  "no <ID>"  /  "change <ID>: …"
 ```
 
-- **ID** = `P-YYMMDD-NN` (e.g. `P-261119-03`).
+- **ID** = `P-YYMMDD-NN` (e.g. `P-260101-01`).
 - Group related changes on one listing into one card; never bundle different listings into one "ok".
 - Before showing: check `data/ops/freeze.md` — frozen → show the card as `⛔ FROZEN` with no ok option.
 
@@ -40,4 +40,4 @@ Write `data/approvals/<ID>.md` from `templates/proposal.md` with status `pending
 eBay / Amazon: status → `owner-to-do`; when the owner says done → `done` + baseline as above.
 
 ## 5. Report
-One line per executed change: `✅ P-261119-03 done — Etsy listing <short name>: title updated, verified live.` Then the ops daily log gets the line.
+One line per executed change: `✅ P-260101-01 done — Etsy listing <short name>: title updated, verified live.` Then the ops daily log gets the line.

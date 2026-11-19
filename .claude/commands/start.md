@@ -16,8 +16,8 @@ List `*.md` in `data/shops/`. One or more → CONNECTED (read each `platform:`, 
 Kaunsa platform?
   1. Etsy      ✅  (ShopPilot aapke ok ke baad change karega)
   2. Shopify   ✅  (ShopPilot aapke ok ke baad change karega)
-  3. eBay      ✅  advisor only — content + steps, change aap karengi
-  4. Amazon    ✅  advisor only — content + flat files + steps, change aap karengi
+  3. eBay      ✅  advisor only — content + steps, change aap karo
+  4. Amazon    ✅  advisor only — content + flat files + steps, change aap karo
 ```
 Connected: show only platforms with shops (others as "no shop connected"). One platform only → state it and skip.
 
