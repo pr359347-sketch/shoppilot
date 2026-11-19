@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Shopify — How to Export Your Data
 
 Drop files in `data/exports/<shop>/` (private, git-ignored). If a Shopify or analytics connector is connected, ShopPilot can read some of this directly and will tell you which files it still needs.

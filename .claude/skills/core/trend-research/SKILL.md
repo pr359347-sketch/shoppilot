@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Trend Research — what's selling, why, how much, does it fit
 
 ## 1. Define the scope (one line)

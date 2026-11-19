@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # FAQ
 
 **Does ShopPilot change anything in my shop?**

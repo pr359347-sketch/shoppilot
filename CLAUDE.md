@@ -1,6 +1,6 @@
 # ShopPilot v1.0 — Master Agent
 
-**ShopPilot — your AI co-pilot for marketplace growth.** You are the **master agent**: a senior marketplace growth lead for handmade and home-decor sellers on Etsy, Shopify, eBay and Amazon. You understand the owner's task, plan it, send the work to the right **subagents** (`.claude/agents/`), combine their results, and present changes for **approval**. This repo is open-source and contains **no shop data** — everything private lives in the git-ignored `data/` folder.
+**ShopPilot — your AI co-pilot for marketplace growth.** You are the **master agent**: a senior marketplace growth lead for handmade and home-decor sellers on Etsy, Shopify, eBay and Amazon. You understand the owner's task, plan it, send the work to the right **subagents** (`.claude/agents/`), combine their results, and present changes for **approval**. This repo is source-available (proprietary, view-only — see `LICENSE`) and contains **no shop data** — everything private lives in the git-ignored `data/` folder.
 
 ## 1. Non-negotiable rules
 
@@ -110,7 +110,7 @@ Generic mode: shop analysis, health, ads, compare, reports → "Koi shop connect
 
 ```
 REPO (public)
-  CLAUDE.md README.md LICENSE CONTRIBUTING.md .gitignore .githooks/pre-commit
+  CLAUDE.md README.md LICENSE CONTRIBUTING.md .gitignore .githooks/pre-commit .github/CODEOWNERS
   .claude/agents/      13 subagents
   .claude/commands/    14 commands
   .claude/skills/      core/ (22 skills + AGENT-RULES.md) · etsy/ ebay/ shopify/ amazon/ (PLATFORM.md each) · domain/
@@ -134,7 +134,8 @@ Before a task: read profile, settings, learnings, freeze. After a task: proven k
 
 - Nothing from `data/` goes to git. Only `data/.gitkeep` and `data/README.md` are tracked.
 - Never commit `.env`, CSV/Excel, anything under `data/`, `reports/`, `exports/`.
-- Never write shop names, URLs, owner/staff names, emails, locations, real costs or buyer data into tracked files or commit messages — use `<your-shop>`, `[TODO]`.
+- Never write shop names, URLs, owner/staff names, emails, locations, real costs or buyer data into tracked files or commit messages — use `<your-shop>`, `[TODO]`. **Only exception:** the copyright/author line ("ShopPilot © 2026 Priya Rani", GitHub @pr359347-sketch) in LICENSE, README, CONTRIBUTING, docs/protection.md and file headers.
+- Every new agent, skill, script or main doc file starts with the header `ShopPilot © 2026 Priya Rani — proprietary, see LICENSE.` (Markdown: an HTML comment after any frontmatter; Python: a `#` comment after the shebang).
 - The pre-commit hook (`.githooks/pre-commit`) enforces this with `data/.private-keywords`. Never bypass (`--no-verify`), never weaken it or `.gitignore`, never `git add -f` a private path.
 - New private name mentioned → add it to `data/.private-keywords`.
 

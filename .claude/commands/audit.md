@@ -1,6 +1,7 @@
 ---
 description: Audit — a single listing you paste, or a full account audit (platform agent + analytics agent)
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Audit a listing. Arguments (optional): `$ARGUMENTS` — the pasted listing, or a shop name.
 

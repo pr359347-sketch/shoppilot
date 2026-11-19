@@ -2,6 +2,7 @@
 name: video-ad-prompts
 description: Write Veo (Google Flow) prompts for 8–15 second listing videos and Instagram/Pinterest reels for rugs — unroll, texture, pile, room reveal — with shot lists and on-screen text. Use when the owner asks for a listing video, reel or video ad prompt.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Video Prompts — Etsy listing videos & reels (Veo / Flow)
 

@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Monthly Health Check (`/health`)
 
 Run once a month per shop, by that shop's platform agent. Uses the **"Monthly health check"** section of the platform's `PLATFORM.md` as the checklist.

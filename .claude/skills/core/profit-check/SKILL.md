@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Profit Check — real profit per product, size and platform
 
 ## Inputs

@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Experiment Tracker — every approved change is an experiment
 
 Every `done` proposal in `data/approvals/` is tracked. Results feed `data/learnings.md`, and future suggestions must read those learnings first.

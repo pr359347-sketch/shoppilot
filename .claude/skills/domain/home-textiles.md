@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Home Decor & Textiles — Domain Knowledge (non-rug categories)
 
 Use this file in place of `.claude/skills/domain/rugs.md` when the product is not a rug. Every skill works the same way; only the product-specific fields change. If a product type isn't listed, apply the "Any other product" pattern at the bottom.

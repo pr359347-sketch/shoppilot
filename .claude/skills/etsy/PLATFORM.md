@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Etsy — Platform Rules (single source of truth)
 
 Last reviewed: 2026-11-13. Etsy changes fees and limits — if the owner's Shop Manager shows something different, **Shop Manager wins**; update this file.

@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Ops Routine — log, summaries, freeze, reminders
 
 Files (all private, created from `templates/` if missing):

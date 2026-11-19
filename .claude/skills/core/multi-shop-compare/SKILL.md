@@ -2,6 +2,7 @@
 name: multi-shop-compare
 description: Compare 2 or more shops side by side using their exported CSVs — sales, conversion, AOV, top categories, listings vs sales efficiency — and decide which shop deserves which product and where the owner should focus. Use when the owner asks to compare shops or asks which shop to focus on.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Multi-Shop Compare
 

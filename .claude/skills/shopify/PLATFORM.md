@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Shopify — Platform Rules (single source of truth)
 
 Last reviewed: 2026-11-19 (from general knowledge — **[VERIFY] values against the store's admin / plan before pricing decisions**). Admin wins; update this file.

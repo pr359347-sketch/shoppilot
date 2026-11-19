@@ -1,6 +1,7 @@
 ---
 description: Creative prompts — listing photos, banners / social graphics, and listing videos / reels
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Generate creative prompts. Arguments (optional): `$ARGUMENTS` — e.g. `/prompts photos beige abstract tufted rug 5x8`, `/prompts banner holiday`, `/prompts video`.
 

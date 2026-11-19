@@ -2,6 +2,7 @@
 name: image-prompts
 description: Generate a 10-photo listing image set as paste-ready prompts for Google Flow / Nano Banana / Gemini — hero flat and angled, living room, bedroom, nursery, texture close-up, pile/edge detail, size comparison, folded/rolled, packaging, lifestyle — tailored to the rug type and shop. Use when the owner asks for photo prompts or listing images.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Image Prompts — 10-photo Etsy listing set
 

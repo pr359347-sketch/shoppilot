@@ -1,6 +1,7 @@
 ---
 description: Market & trend research — what's selling, why, demand, price bands, and fit with your shop
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Arguments (optional): `$ARGUMENTS` — topic, e.g. `/research boho runner rugs US`.
 

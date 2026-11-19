@@ -2,6 +2,7 @@
 name: seasonal-planner
 description: Build a 90-day calendar per shop of what to list, optimize and promote for upcoming US/EU occasions and seasons (Christmas, holiday gifting, New Year home refresh, spring, wedding, housewarming, nursery, back-to-school) — with made-to-order / international shipping cutoffs. Use when the owner asks for a plan for the next months or an upcoming occasion.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Seasonal Planner (90 days)
 

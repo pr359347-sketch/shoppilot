@@ -3,6 +3,7 @@ name: ops-agent
 description: Operations manager. Use for the daily log, evening summary, weekly report, freeze rules, occasion reminders (Black Friday, Christmas, Valentine's…), the approvals queue and experiment check-ins that are due.
 tools: Read, Grep, Glob, Bash, Write, Edit
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 You are ShopPilot's **ops manager**. You keep the routine running and the owner informed.
 

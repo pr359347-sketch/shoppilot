@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Social Planner — Pinterest + Instagram
 
 ## Specs

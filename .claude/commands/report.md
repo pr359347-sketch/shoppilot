@@ -1,6 +1,7 @@
 ---
 description: Reports — daily log, evening summary, weekly report, occasion reminders, experiment check-ins
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Arguments (optional): `$ARGUMENTS` — `daily` · `evening` (default) · `weekly` · `reminders` · `experiments`.
 

@@ -2,6 +2,7 @@
 name: competitor-research
 description: Gap analysis from competitor data the owner pastes (titles, tags, prices, sizes, screenshots of listings or shops) — finds keywords, sizes, price points, styles and photo tactics the owner's shop is missing. Use when the owner shares competitor listings/shops or asks what competitors are doing.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Competitor Research
 

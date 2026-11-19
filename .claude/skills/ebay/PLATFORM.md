@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # eBay — Platform Rules (single source of truth)
 
 Last reviewed: 2026-11-19 (from general knowledge — **values marked [VERIFY] must be checked in Seller Hub / eBay fee pages before a pricing or fee decision**). If Seller Hub shows something different, Seller Hub wins; update this file.

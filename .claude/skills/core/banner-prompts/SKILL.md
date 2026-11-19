@@ -2,6 +2,7 @@
 name: banner-prompts
 description: Create prompts and text overlays for shop graphics — big shop banner 1200x300, mini banner, shop icon, featured/sale graphics — plus Pinterest pins and Instagram posts, per shop and season. Use when the owner asks for a banner, shop graphics, pins or social posts.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Banner & Social Graphic Prompts
 

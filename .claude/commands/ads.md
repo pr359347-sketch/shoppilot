@@ -1,6 +1,7 @@
 ---
 description: Ads optimizer — Etsy Ads, eBay Promoted Listings (General/Priority), Amazon PPC harvesting, Shopify/Google ads basics
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Arguments (optional): `$ARGUMENTS` — shop name.
 

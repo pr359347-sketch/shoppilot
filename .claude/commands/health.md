@@ -1,6 +1,7 @@
 ---
 description: Monthly health check for a shop — platform checklist with green/amber/red and Top 5 actions
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Arguments (optional): `$ARGUMENTS` — shop name.
 

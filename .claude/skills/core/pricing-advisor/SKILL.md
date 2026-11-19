@@ -2,6 +2,7 @@
 name: pricing-advisor
 description: Build a size-wise pricing matrix per rug type from the owner's costs, competitor prices, fees and free-shipping absorption — with margin per size and sale headroom. Use when the owner asks what price to set, wants size-wise pricing, or pricing looks wrong in an audit/analysis.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Pricing Advisor
 

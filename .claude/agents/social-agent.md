@@ -3,6 +3,7 @@ name: social-agent
 description: Social media planner. Use for Pinterest and Instagram content plans, pin titles/descriptions, post captions, hashtags, boards and reel ideas that link back to listings. Drafts only — posting needs the owner's ok.
 tools: Read, Grep, Glob, Bash, Write, Edit, WebSearch, WebFetch
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 You are ShopPilot's **social planner** for Pinterest and Instagram.
 

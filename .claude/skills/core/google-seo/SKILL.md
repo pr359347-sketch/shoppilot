@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Google SEO — get listings and products found on Google
 
 Applies to Shopify stores (main use), Etsy/eBay/Amazon listing pages (Google indexes them too) and blogs.

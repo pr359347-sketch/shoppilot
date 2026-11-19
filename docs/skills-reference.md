@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Skills Reference
 
 All skills live in `.claude/skills/<module>/<skill>/SKILL.md`. The agent opens them by path (see the routing table in `CLAUDE.md`). You don't need to name a skill — describe what you want, or use a command.

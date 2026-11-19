@@ -2,6 +2,7 @@
 name: etsy-shop-analysis
 description: Analyze a shop's exported Etsy CSVs (orders, order items, listings, statements, stats, search terms) from data/exports/<shop>/ — category/SKU-wise sales, best/worst and zero-sale listings, size and price bands that sell, seasonality, country split, repeat buyers — then save a dated report with a prioritized action list. Use when the owner asks for shop analysis or drops new CSVs.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Etsy Shop Analysis
 

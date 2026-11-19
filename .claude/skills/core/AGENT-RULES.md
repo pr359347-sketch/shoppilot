@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # ShopPilot — Shared Agent Rules
 
 Every subagent in `.claude/agents/` reads this file first. If anything in an agent file conflicts with this one, **this file wins**.

@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Creative QA — tool choice, lock-line, drift check, text check
 
 ## 1. Tool choice

@@ -1,6 +1,10 @@
 # Contributing to ShopPilot
 
-Thanks for helping. ShopPilot is a set of instructions, skills and small scripts for Claude Code — most contributions are Markdown.
+> **External contributions are not accepted without prior agreement. Open an issue to discuss.**
+>
+> ShopPilot © 2026 Priya Rani is proprietary, source-available software ([LICENSE](LICENSE)): it is public for viewing and evaluation only. Pull requests without a prior written agreement will be closed.
+
+The rules below apply to the owner and to anyone working under a written agreement.
 
 ## Ground rules
 
@@ -38,4 +42,4 @@ Short version — full guide in [docs/adding-a-platform.md](docs/adding-a-platfo
 - Test your change in Claude Code in both generic mode (no shop) and connected mode (a local test profile under `data/`, which stays untracked).
 - Keep skills concise: instructions the agent needs, not essays.
 
-By contributing you agree that your contribution is licensed under the [MIT License](LICENSE).
+Contributions made under a written agreement become part of ShopPilot and are covered by its [LICENSE](LICENSE) (all rights reserved by the owner), unless the agreement says otherwise.

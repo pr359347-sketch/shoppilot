@@ -2,6 +2,7 @@
 name: listing-audit-framework
 description: Audit a live listing the owner pastes (title, tags, description, price, variations, photos, stats) — find CTR and conversion problems and give exact paste-ready fixes. Use when the owner asks to check a listing, pastes listing text/screenshot, or asks why a listing isn't selling.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Listing Audit Framework
 

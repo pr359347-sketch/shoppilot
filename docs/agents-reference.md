@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Agents & Commands Reference
 
 The **master** (`CLAUDE.md`) talks to you, plans, delegates to subagents, combines results and asks for your approval. Subagents live in `.claude/agents/` and never make live changes themselves.

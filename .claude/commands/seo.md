@@ -1,6 +1,7 @@
 ---
 description: SEO — marketplace keywords + listing package, and Google SEO (meta, alt text, Merchant Center, Search Console)
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Create or improve listing SEO. Arguments (optional): `$ARGUMENTS` — the product description, e.g. `/seo hand tufted wool rug, beige abstract, 5x8 and 8x10`.
 

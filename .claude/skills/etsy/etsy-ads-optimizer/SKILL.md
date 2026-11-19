@@ -2,6 +2,7 @@
 name: etsy-ads-optimizer
 description: Analyze Etsy Ads data (CSV or pasted table/screenshot) — ROAS per listing — and produce a pause / scale / fix / watch list plus budget advice. Use when the owner shares Etsy Ads numbers or asks about ads, ROAS or ad budget.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Etsy Ads Optimizer
 

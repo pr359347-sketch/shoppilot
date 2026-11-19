@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Cross-Listing — one listing → every other platform's format
 
 Input: one source listing (pasted, or from an export in `data/exports/<shop>/`). Output: a paste-ready version per target platform, respecting each `PLATFORM.md`.

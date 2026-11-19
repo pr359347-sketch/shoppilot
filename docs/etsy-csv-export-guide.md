@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Etsy — How to Export Your Data
 
 Skills show the relevant section of this file to the owner whenever a needed file is missing from `data/exports/<shop>/`. Export while logged in to the shop the data belongs to.

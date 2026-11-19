@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Rugs — Domain Knowledge (shared by all skills)
 
 General rug knowledge for any Etsy rug seller. For other home decor / textile products see `.claude/skills/domain/home-textiles.md`.

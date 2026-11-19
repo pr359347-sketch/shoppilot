@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Customer Replies — buyer messages, reviews, cases
 
 ## Tone

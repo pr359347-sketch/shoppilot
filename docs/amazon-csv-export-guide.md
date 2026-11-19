@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Amazon — How to Export Your Data
 
 ShopPilot is **advisor-only on Amazon** — you download these yourself in Seller Central and drop them in `data/exports/<shop>/` (private, git-ignored). Files are recognised by headers. Menu names vary by marketplace; search the report name in Seller Central if needed.

@@ -1,6 +1,7 @@
 ---
 description: Connect a shop — creates a private shop profile and exports folder in data/ from templates
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Connect a shop to ShopPilot. Everything you create goes in the private, git-ignored `data/` folder — never in tracked files. Talk in the owner's language (`data/settings.md` if it exists; otherwise the language they write in).
 

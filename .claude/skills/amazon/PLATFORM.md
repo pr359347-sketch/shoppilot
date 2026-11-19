@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Amazon — Platform Rules (single source of truth)
 
 Last reviewed: 2026-11-19 (from general knowledge — **Amazon changes limits per category; every [VERIFY] value must be checked in the category style guide / Seller Central before use**). Seller Central wins; update this file.

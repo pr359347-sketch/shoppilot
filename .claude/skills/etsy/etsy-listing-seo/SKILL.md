@@ -2,6 +2,7 @@
 name: etsy-listing-seo
 description: Build a complete paste-ready Etsy listing package for a rug or textile — title, 13 tags, description with size + price table, alt text for 10 photos, attributes, category, materials. Use when the owner asks for a new listing, or to rewrite title/tags/description for a product.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Etsy Listing SEO — full listing package
 

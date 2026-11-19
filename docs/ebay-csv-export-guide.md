@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # eBay — How to Export Your Data
 
 ShopPilot is **advisor-only on eBay** — you download these yourself and drop them in `data/exports/<shop>/` (private, git-ignored). Files are recognised by their column headers; no renaming needed. eBay menus move around — if a step looks different, look for the same report name in Seller Hub.

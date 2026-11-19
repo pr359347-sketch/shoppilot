@@ -1,6 +1,7 @@
 ---
 description: Approvals queue — pending proposals, approved-not-done, owner to-dos (eBay/Amazon), experiment checks due
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Arguments (optional): `$ARGUMENTS` — `ok <ID>` · `no <ID>` · a shop name · empty (= show queue).
 

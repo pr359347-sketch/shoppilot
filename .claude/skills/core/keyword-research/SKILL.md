@@ -2,6 +2,7 @@
 name: keyword-research
 description: Build a keyword pool for a product (rug type or any home decor / textile item) + color/style/room — head, long-tail, room, style, size, occasion and buyer-intent keywords, tag-ready (≤20 chars) and title-ready. Checks data/keyword-pools first and the shop's own search-term data, then suggests new ones. Use when the owner asks for keywords or before writing a listing.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Keyword Research
 

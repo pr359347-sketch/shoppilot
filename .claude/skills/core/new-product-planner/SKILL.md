@@ -2,6 +2,7 @@
 name: new-product-planner
 description: Given a bestseller or a trend, suggest new color/design/size/shape variants, decide which shop each should be listed in, and give a launch checklist. Use when the owner asks what new products or variants to make, or wants to expand a winning listing.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # New Product Planner
 

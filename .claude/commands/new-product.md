@@ -1,6 +1,7 @@
 ---
 description: New ORIGINAL product ideas from trends or bestsellers — design brief, colours, prompts, listing package, shop fit
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Arguments (optional): `$ARGUMENTS` — a trend, a bestseller, or an idea.
 

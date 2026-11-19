@@ -6,15 +6,17 @@
 
 A [Claude Code](https://claude.com/claude-code) **master agent + 13 specialist subagents** that audit, research, optimise and grow handmade & home-decor shops — and never change anything without your **ok**.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: Proprietary (view only)](https://img.shields.io/badge/License-Proprietary%20(view%20only)-B91C1C)](LICENSE)
 [![Built for Claude Code](https://img.shields.io/badge/Built%20for-Claude%20Code-D97757)](https://claude.com/claude-code)
 [![Platforms](https://img.shields.io/badge/Platforms-Etsy%20·%20Shopify%20·%20eBay%20·%20Amazon-4B5563)](#-platform-support)
 [![Human-in-the-loop](https://img.shields.io/badge/Human--in--the--loop-approval%20first-2563EB)](#-approval-flow)
 [![Privacy](https://img.shields.io/badge/Data-stays%20local-0F766E)](#-privacy)
 
-[Quick start](#-quick-start) · [Commands](#-commands) · [Architecture](#-architecture) · [FAQ](docs/faq.md) · [Hinglish](#-quickstart-hinglish)
+[Quick start](#-quick-start) · [Commands](#-commands) · [Architecture](#-architecture) · [Author](#-author) · [FAQ](docs/faq.md) · [Hinglish](#-quickstart-hinglish)
 
 </div>
+
+> **© 2026 Priya Rani — Built and owned by Priya Rani.** Public for portfolio & evaluation. Use requires written permission. See [LICENSE](LICENSE).
 
 ---
 
@@ -70,6 +72,8 @@ Every subagent reads the same rulebook first — [`AGENT-RULES.md`](.claude/skil
 > eBay and Amazon are advisor-only on purpose: automated activity on those seller accounts can risk suspension.
 
 ## 🚀 Quick start
+
+> Using ShopPilot requires written permission from the owner ([LICENSE](LICENSE)). The steps below are for licensed users and evaluation.
 
 **1. Clone and enable the privacy hook**
 
@@ -192,13 +196,20 @@ data/                      your private workspace (git-ignored)
 - [ ] Analysis scripts for Shopify, eBay and Amazon exports
 - [ ] More product domains — jewelry, ceramics, wall art, furniture
 
+## 👩‍💻 Author
+
+**Priya Rani** — E-commerce growth specialist & AI agent builder
+GitHub: [@pr359347-sketch](https://github.com/pr359347-sketch)
+
+📬 **Contact for licensing / collaboration:** open an issue on this repo or reach out via [GitHub](https://github.com/pr359347-sketch).
+
 ## 🤝 Contributing
 
-PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/adding-a-platform.md](docs/adding-a-platform.md). Questions: [docs/faq.md](docs/faq.md).
+External contributions are not accepted without prior agreement — open an issue to discuss. Details: [CONTRIBUTING.md](CONTRIBUTING.md). Questions: [docs/faq.md](docs/faq.md).
 
 ## 📄 License
 
-[MIT](LICENSE)
+**Proprietary — source-available, all rights reserved.** © 2026 Priya Rani. Published for viewing and evaluation only; no use, copying, modification or distribution without prior written permission. See [LICENSE](LICENSE).
 
 ---
 
@@ -208,6 +219,8 @@ ShopPilot ek **master agent + 13 expert subagents** ka system hai. Aap kaam bata
 
 - **Etsy + Shopify:** "ok" ke baad ShopPilot khud change karta hai (insaan ki speed se).
 - **eBay + Amazon:** sirf advisor. Content, CSV aur steps milenge, change aap karte ho.
+
+> Use ke liye owner (Priya Rani) ki written permission chahiye — [LICENSE](LICENSE) dekho.
 
 1. Repo clone karo, phir `git config core.hooksPath .githooks` chalao.
 2. Folder Claude Code me kholo, phir `/connect-shop` chalao.

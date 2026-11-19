@@ -1,6 +1,7 @@
 ---
 description: Analyze a connected shop from its exports — sales, listings, ads, or compare shops
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Run a data analysis for a connected shop. Arguments (optional): `$ARGUMENTS` — e.g. `/analyze <shop>`, `/analyze <shop> ads`, `/analyze compare`.
 

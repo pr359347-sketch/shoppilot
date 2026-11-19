@@ -1,6 +1,7 @@
 ---
 description: Creative — product images, room shots, size charts, banners, icons, video ads (2–3 options, upload only after ok)
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Arguments (optional): `$ARGUMENTS` — e.g. `/creative banner christmas`, `/creative room shots <listing>`, `/creative video`.
 

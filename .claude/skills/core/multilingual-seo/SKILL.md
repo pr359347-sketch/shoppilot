@@ -2,6 +2,7 @@
 name: multilingual-seo
 description: Translate and localize a listing's title and 13 tags (optionally description) into Etsy's 9 languages — German, French, Italian, Spanish, Dutch, Portuguese, Polish, Japanese, Russian — keeping keyword intent, local search terms and limits. Use when the owner asks to translate a listing or target a specific country.
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 # Multilingual SEO — DE, FR, IT, ES, NL, PT, PL, JA, RU
 

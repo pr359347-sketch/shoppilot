@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# ShopPilot © 2026 Priya Rani — proprietary, see LICENSE.
 """Etsy CSV cruncher for the growth-advisor skills (stdlib only).
 
 Reads every CSV in data/exports/<shop>/, detects the file type from its header,

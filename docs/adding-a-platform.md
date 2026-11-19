@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Adding a Platform Module
 
 ShopPilot is multi-platform by design. Etsy is the reference module — copy its shape.

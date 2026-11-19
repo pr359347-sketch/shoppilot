@@ -1,6 +1,7 @@
 ---
 description: Freeze rules — stop live changes for a shop/area for a period (e.g. Black Friday week), or list/lift freezes
 ---
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 
 Arguments: `$ARGUMENTS` — e.g. `/freeze <shop> titles-tags till 2026-12-02 black friday`, `/freeze list`, `/freeze lift <shop> all`.
 

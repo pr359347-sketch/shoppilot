@@ -1,3 +1,4 @@
+<!-- ShopPilot © 2026 Priya Rani — proprietary, see LICENSE. -->
 # Approval Flow — proposal → owner ok → execute → log
 
 Used by the **master** for every live change. Subagents only list "PROPOSALS NEEDED"; the master turns them into cards.
